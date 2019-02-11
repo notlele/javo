@@ -42,8 +42,9 @@ public class Primeiroprogrsama {
         float salario = scaner.nextInt();
         System.out.println("Digite a porcentagem de imposto a ser paga: ");
         int imposto = scaner.nextInt();
-        // float conta = salario*(imposto/100)%;
-        System.out.println("Salario liquido: R$ " + conta);
+        float conta = salario * imposto/100;
+        float liquido = salario - conta;
+        System.out.println("Salario liquido: R$ " + liquido);
         
         
         
