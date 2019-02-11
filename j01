@@ -46,7 +46,6 @@ public class Primeiroprogrsama {
         float conta = salario * imposto/100;
         float liquido = salario - conta;
         System.out.println("Salario liquido: R$ " + liquido);
-        */
         
         System.out.println("Digite a nota da avaliação continuada:");
         float notacont = scaner.nextInt();
@@ -78,8 +77,6 @@ public class Primeiroprogrsama {
         }
         
         
-        
-        /*
         int idade;
         int a,b;
         
@@ -95,6 +92,20 @@ public class Primeiroprogrsama {
             System.out.println("so pode beber escondidos");
         }
         */
+        
+        System.out.println("Quantos amigos vão rachar a pizza? ");
+        int amigos = scaner.nextInt();
+        String sabor = scaner.nextLine();
+        System.out.println("Qual o sabor da pizza? ");
+        sabor = scaner.nextLine();
+        System.out.println("Qual o valor da pizza? ");
+        float vlr = scaner.nextInt();
+        
+        float rachar = vlr / amigos;
+        System.out.println("A pizza de " + sabor + " custa R$" + vlr + " e cada amigo vai pagar R$" + rachar);
+        
     }
+    
+   
     
 }
