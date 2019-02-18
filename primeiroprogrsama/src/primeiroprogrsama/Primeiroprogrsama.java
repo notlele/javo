@@ -91,34 +91,23 @@ public class Primeiroprogrsama {
         else {
             System.out.println("so pode beber escondidos");
         }
-        
-        System.out.println("Quantos amigos vão rachar a pizza? ");
-        int amigos = scaner.nextInt();
-        String sabor = scaner.nextLine();
-        System.out.println("Qual o sabor da pizza? ");
-        sabor = scaner.nextLine();
-        System.out.println("Qual o valor da pizza? ");
-        float vlr = scaner.nextInt();
-        
-        float rachar = vlr / amigos;
-        System.out.println("A pizza de " + sabor + " custa R$" + vlr + " e cada amigo vai pagar R$" + rachar);
         */
         
-        JOptionPane.showMessageDialog (null, "erwretrwere");
-        JOptionPane.showMessageDialog (null, "quero ir pra casa", "fdfsd",JOptionPane.WARNING_MESSAGE);
-        String emsm = JOptionPane.showInputDialog("emsm e");
-        JOptionPane.showMessageDialog (null, emsm);
+        System.out.println("Numero 1: ");
+        int n1 = scaner.nextInt();
+        System.out.println("Numero 2: ");
+        int n2 = scaner.nextInt();
+        System.out.println("Numero 3: ");
+        int n3 = scaner.nextInt();
         
-        int idade = Integer.parseInt(JOptionPane.showInputDialog("qual usa idade "));
-        
-        float nota = Float.parseFloat(JOptionPane.showInputDialog("qual sua notw"));
-        
-        int num = Integer.parseInt(JOptionPane.showInputDialog("digite um numro"));
-        if (num %2 == 0) {
-            JOptionPane.showMessageDialog(null, num + " eh par");
+        if (n1 == n2 && n1 == n3 && n2 == n3) {
+            System.out.println("É um triângulo equilátero");
         }
-        else {
-            JOptionPane.showMessageDialog(null, num + " eh impar");
+        else if (n1 != n2 && n1 != n3 && n2 != n3 ) {
+            System.out.println("É um triângulo escaleno");
+        }
+        else if (n1 == n2 && n2 != n3 || n2 == n3 && n1 != n3) {
+            System.out.println("É um triângulo isósceles");
         }
     }
     
