@@ -80,6 +80,16 @@ public class aula02 {
         }
     */
     
+        System.out.println("Qual o valor da conta do restaurante?");
+        int conta = scaner.nextInt();
+        System.out.println("Você vai pagar os 10%? \n1 - SIM | 2 - NAO");
+        int tip = scaner.nextInt();
+        double total = conta + conta * 10/100;
+        
+        switch (tip) {
+            case 1: System.out.println("Total a pagar R$" + total);
+            case 2: System.out.println("Total a pagar R$" + conta);
+        }
     
     }
 }
