@@ -55,9 +55,24 @@ public class Projetao3 {
                 break;
         }
         
-        // int cont=1;
+        
         for (int cont=1;cont <= 5;cont++) {
             System.out.println("boa noite via for");
+        }
+        
+        int cont=1;
+        do {
+            System.out.println("boa noite com do/while");
+            cont++;
+        } while (cont <= 5);
+        
+        System.out.println("Digite o nome da sua faculdade: ");
+        String fac = leitor.next();
+        if (fac.equals("Bandtec")) {
+            System.out.println("Parabéns/! ótima escolha");
+        }
+        else {
+            System.out.println("vem pra Bandtec");
         }
     }
     
