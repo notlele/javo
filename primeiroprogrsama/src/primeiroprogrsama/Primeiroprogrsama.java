@@ -103,6 +103,23 @@ public class Primeiroprogrsama {
         float rachar = vlr / amigos;
         System.out.println("A pizza de " + sabor + " custa R$" + vlr + " e cada amigo vai pagar R$" + rachar);
         */
+        
+        JOptionPane.showMessageDialog (null, "erwretrwere");
+        JOptionPane.showMessageDialog (null, "quero ir pra casa", "fdfsd",JOptionPane.WARNING_MESSAGE);
+        String emsm = JOptionPane.showInputDialog("emsm e");
+        JOptionPane.showMessageDialog (null, emsm);
+        
+        int idade = Integer.parseInt(JOptionPane.showInputDialog("qual usa idade "));
+        
+        float nota = Float.parseFloat(JOptionPane.showInputDialog("qual sua notw"));
+        
+        int num = Integer.parseInt(JOptionPane.showInputDialog("digite um numro"));
+        if (num %2 == 0) {
+            JOptionPane.showMessageDialog(null, num + " eh par");
+        }
+        else {
+            JOptionPane.showMessageDialog(null, num + " eh impar");
+        }
     }
     
    
