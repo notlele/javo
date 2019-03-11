@@ -36,7 +36,7 @@ public class TesteAluno {
         Aluno frank = new Aluno();
         
         // atribuindo valores ao obj
-        frank.nome = "Claudia";
+        frank.nome = "Frank";
         frank.ra = 52008;
         frank.nota = 7;
         frank.qtdFalta = 2;
