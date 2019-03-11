@@ -15,6 +15,7 @@ public class Aluno {
     int ra;
     double nota;
     int qtdFalta;
+    boolean aprovado;
     
     // metodos
     public void verNota() {

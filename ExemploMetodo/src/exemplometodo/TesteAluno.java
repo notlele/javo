@@ -18,6 +18,7 @@ public class TesteAluno {
         claudia.ra = 52094;
         claudia.nota = 10;
         claudia.qtdFalta = 0;
+        claudia.aprovado = true;
         
         // chamando os metodos do obj
         claudia.verNota();
@@ -39,6 +40,7 @@ public class TesteAluno {
         frank.ra = 52008;
         frank.nota = 7;
         frank.qtdFalta = 2;
+        frank.aprovado = false;
         
         // chamando os metodos do obj
         frank.verNota();
