@@ -31,7 +31,6 @@ public class TesteAluno {
             System.out.println(claudia.nome + " está acima da média");
         }
         
-        
         // outro obj aluno
         Aluno frank = new Aluno();
         
@@ -54,4 +53,10 @@ public class TesteAluno {
         }
     }
     
+    // exercicios carro, override
+    @Override
+    public String toString() {
+        return "Modelo: " + modelo + " \nCor: " + cor + "\nAno: " + ano + "\nVelocidade Atual: " + velocidadeAtual + "\nVelocidade Maxima " + velocidadeMaxima + "\nLigado? " + ligado;
+    }
+
 }
