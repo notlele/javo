@@ -81,5 +81,17 @@ public class aula03 {
     */
     
         
+        System.out.println("Por favor insira usuário: ");
+        String usuario = scaner.nextLine();
+        System.out.println("Insira senha: ");
+        String senha = scaner.nextLine();
+    
+        
+        if ("aluno".equals(usuario) && "bandtec".equals(senha) || "prof".equals(usuario) && "band".equals(senha) || "coord".equals(usuario) && "colband".equals(senha) || "admin".equals(usuario) && "bbbbb".equals(senha)) {
+            System.out.println("Olá, " + usuario + "! Bem vindo ao sistema!");
+        }
+        else {
+            System.out.println("Usuário ou senha inválido");
+        }
     }
 }
