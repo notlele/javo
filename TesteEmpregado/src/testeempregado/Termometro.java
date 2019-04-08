@@ -18,12 +18,14 @@ public class Termometro {
         if (max > temperaturaMax) {
             temperaturaMax = max;
         }
+        System.out.println("Temperatura mínima: " + temperaturaMin + "ºC");
     }
     
     public void diminuiTemperatura(int min) {
         if (min > temperaturaMin) {
             temperaturaMin = min;
         }
+        System.out.println("Temperatura mínima: " + temperaturaMin + "ºC");
     }
     
     public void exibeFahrenheit() {
