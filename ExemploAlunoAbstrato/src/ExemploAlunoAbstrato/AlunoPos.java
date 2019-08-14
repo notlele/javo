@@ -3,8 +3,9 @@ package ExemploAlunoAbstrato;
 public class AlunoPos extends Aluno {
     private double notaMonografia;
 
-    public AlunoPos(int ra, String nome, double nota1, double nota2) {
+    public AlunoPos(int ra, String nome, double nota1, double nota2, double notaMonografia) {
         super(ra, nome, nota1, nota2);
+        setNotaMonografia(notaMonografia);
     }
 
     @Override
