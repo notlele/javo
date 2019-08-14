@@ -19,4 +19,23 @@ public class Cadastro {
             System.out.println(a);
         }
     }
+
+    public void exibeAlunoGraduacao() {
+        System.out.println("\nLista de alunos de graduação:");
+        for (Aluno a : lista) {
+            if (a instanceof AlunoGraduacao) {
+                System.out.println(a);
+            }
+        }
+    }
+
+    public Aluno buscaAluno(int ra) {
+        for (Aluno a : lista) {
+            if (a.getRa() == ra) {
+                return a;
+            }
+            return null;
+        }
+        return null;
+    }
 }
