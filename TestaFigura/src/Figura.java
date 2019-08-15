@@ -1,8 +1,21 @@
 public abstract class Figura {
     private String cor;
-    private String tipo;
-    private double altura;
-    private double base;
+    private int expessura;
+
+
+    public abstract double calculaArea() {
+        return conta;
+    }
+
+
+    @java.lang.Override
+    public java.lang.String toString() {
+        return "Figura{" +
+                "cor='" + cor + '\'' +
+                ", expessura=" + expessura +
+                '}';
+    }
+
 
     public String getCor() {
         return cor;
@@ -12,31 +25,16 @@ public abstract class Figura {
         this.cor = cor;
     }
 
-    public String getTipo() {
-        return tipo;
+    public int getExpessura() {
+        return expessura;
     }
 
-    public void setTipo(String tipo) {
-        this.tipo = tipo;
-    }
-
-    public double getAltura() {
-        return altura;
-    }
-
-    public void setAltura(double altura) {
-        this.altura = altura;
-    }
-
-    public double getBase() {
-        return base;
-    }
-
-    public void setBase(double base) {
-        this.base = base;
+    public void setExpessura(int expessura) {
+        this.expessura = expessura;
     }
 
     public double calculaArea() {
         return base * altura;
     }
+
 }
