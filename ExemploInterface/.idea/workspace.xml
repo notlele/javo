@@ -70,16 +70,20 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/ExemploInterface/Tributo.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
-              <caret line="3" selection-start-line="3" selection-end-line="3" />
+            <state relative-caret-position="136">
+              <caret line="8" column="34" lean-forward="true" selection-start-line="8" selection-start-column="34" selection-end-line="8" selection-end-column="34" />
+              <folding>
+                <element signature="e#169#170#0" expanded="true" />
+                <element signature="e#209#210#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/ExemploInterface/Servico.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="325">
@@ -126,8 +130,8 @@
         <option value="$PROJECT_DIR$/src/ExemploInterface/Produto.java" />
         <option value="$PROJECT_DIR$/src/ExemploInterface/Alimento.java" />
         <option value="$PROJECT_DIR$/src/ExemploInterface/Perfume.java" />
-        <option value="$PROJECT_DIR$/src/ExemploInterface/Tributo.java" />
         <option value="$PROJECT_DIR$/src/ExemploInterface/Servico.java" />
+        <option value="$PROJECT_DIR$/src/ExemploInterface/Tributo.java" />
       </list>
     </option>
   </component>
@@ -281,13 +285,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ExemploInterface/Tributo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" selection-start-line="3" selection-end-line="3" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/ExemploInterface/Servico.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="325">
@@ -303,6 +300,17 @@
             <element signature="e#346#347#0" expanded="true" />
             <element signature="e#388#389#0" expanded="true" />
             <element signature="e#422#423#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ExemploInterface/Tributo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="34" lean-forward="true" selection-start-line="8" selection-start-column="34" selection-end-line="8" selection-end-column="34" />
+          <folding>
+            <element signature="e#169#170#0" expanded="true" />
+            <element signature="e#209#210#0" expanded="true" />
           </folding>
         </state>
       </provider>
