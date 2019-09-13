@@ -2,15 +2,12 @@ package br.com.bandtec.agendadeobjetivos.controller;
 
 import br.com.bandtec.agendadeobjetivos.domain.Objetivo;
 import br.com.bandtec.agendadeobjetivos.domain.TodosObjetivos;
-import br.com.bandtec.agendadeobjetivos.domain.Usuario;
-import org.apache.tomcat.jni.Local;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.time.LocalDate;
-import java.util.ArrayList;
 import java.util.List;
 
 @RestController
@@ -24,7 +21,7 @@ public class ObjetivoController {
 
     @PostMapping("/objetivos")
     public ResponseEntity<String> salvar(@RequestBody Objetivo objetivo) {
-        todosObjetivos.salvar(objetivo);
+        todosObjetivos.save(objetivo);
         return ResponseEntity.status(HttpStatus.OK).body("Sucesso");
     }
 
