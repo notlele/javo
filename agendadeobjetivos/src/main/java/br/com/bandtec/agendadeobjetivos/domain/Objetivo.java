@@ -4,15 +4,26 @@ import java.time.LocalDate;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 
+import javax.persistence.*;
+
+@Entity
+@Table(name = "tbObjetivo")
 public class Objetivo {
 
+	@Id
+	@GeneratedValue
+	private Long idObjetivo;
+
 	@JsonProperty
+	@Column(name = "objTitle")
 	private String titulo;
-	
+
 	@JsonProperty
+	@Column(name = "objDesc")
 	private String descricao;
-	
+
 	@JsonProperty
+	@Column(name = "objDataMax")
 	private LocalDate dataMaximaParaExecucao;
 	
 	public Objetivo() {}

@@ -1,5 +1,6 @@
 package br.com.bandtec.agendadeobjetivos.controller;
 
+import org.springframework.data.jpa.repository.Query;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -12,7 +13,7 @@ public class LoginController {
 	@PostMapping("/login")
 	public ResponseEntity<String> validarLogin(
 			@RequestBody Credenciais credenciais) {
-		if(credenciais.getLogin().equals(credenciais.getSenha())) {
+		if(buscarUsando(credenciais.getLogin(),credenciais.getSenha())) {
 			return ResponseEntity
 					.status(HttpStatus.OK)
 					.body("Sucesso");
