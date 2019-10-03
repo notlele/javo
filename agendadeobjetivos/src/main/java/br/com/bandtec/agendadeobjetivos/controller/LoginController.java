@@ -16,6 +16,7 @@ public class LoginController {
 	@Autowired
 	public LoginController(TodosUsuarios todosUsuarios) { this.todosUsuarios = todosUsuarios; }
 
+
 	@PostMapping("/login")
 	public ResponseEntity<String> validarLogin(@RequestBody Credenciais credenciais) {
 		if(todosUsuarios.buscarUsando(credenciais) != null) {

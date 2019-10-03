@@ -26,12 +26,6 @@ public class Usuario {
 		this.senha = senha;
 	}
 
-
-	public Usuario buscarUsando(String login, String senha) {
-		return getLogin(), getSenha();
-
-	}
-
 	public String getNome() {
 		return nome;
 	}

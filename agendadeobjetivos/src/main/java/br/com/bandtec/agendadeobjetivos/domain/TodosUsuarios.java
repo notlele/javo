@@ -11,6 +11,9 @@ import java.util.List;
         
 @Repository
 public interface TodosUsuarios extends JpaRepository<Usuario, Long> {
-        @Query("select o from Usuario o where o.login = login && o.senha = senha")
+        @Query("select u from Usuario u where u.credenciais = :credenciais")
         public Usuario buscarUsando(@Param("credenciais") Credenciais credenciais);
+
+        @Query("select u from Usuario u where u.nome = :nome")
+        public List<Usuario> obterPorNome(String nome);
 }
