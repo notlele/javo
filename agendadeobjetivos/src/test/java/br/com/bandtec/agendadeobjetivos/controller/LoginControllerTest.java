@@ -10,6 +10,7 @@ import org.mockito.Mock;
 import org.mockito.Mockito;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import sun.util.resources.ga.LocaleNames_ga;
 
 public class LoginControllerTest {
 	private TodosUsuarios todosUsuarios;
@@ -22,7 +23,7 @@ public class LoginControllerTest {
 	@Test
 	public void loginComSucesso() {
 		Credenciais c = new Credenciais("rodrigo", "1234");
-		Mockito.when(todosUsuarios.buscarUsando(c)).thenReturn(new Usuario("Rodrigo", 39, (long) 1,"rodrigo","1234"));
+		Mockito.when(todosUsuarios.buscarUsando(c)).thenReturn(new Usuario((long) 1, c, "rodrigo", 12));
 		LoginController controller = new LoginController(todosUsuarios);
 		
 		ResponseEntity<String> resposta =  controller.validarLogin(c);
