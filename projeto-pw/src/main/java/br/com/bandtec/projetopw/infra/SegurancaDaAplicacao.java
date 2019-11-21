@@ -11,8 +11,6 @@ public class SegurancaDaAplicacao {
 
 	private final TodosUsuarios todosUsuarios;
 	
-	
-	
 	@Autowired
 	public SegurancaDaAplicacao(TodosUsuarios todosUsuarios) {
 		this.todosUsuarios = todosUsuarios;
@@ -23,5 +21,4 @@ public class SegurancaDaAplicacao {
 		boolean loginESenhaIguais = credenciais.getLogin().equals(credenciais.getSenha());
 		return usuarioPresenteNaBase && loginESenhaIguais;
 	}
-
 }

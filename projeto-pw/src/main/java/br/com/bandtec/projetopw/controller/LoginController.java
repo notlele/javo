@@ -28,14 +28,4 @@ public class LoginController {
 		model.addAttribute(new Credenciais(null, null));
 		return "paginaDeLogin";
 	}
-	
-	
-	
-	
-	
-	
-	
-	
-	
-
 }
